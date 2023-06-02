@@ -1,16 +1,16 @@
 #include<iostream>
 #include<iomanip>
 #include<math.h>
+double temp,p=0;
 using namespace std;
-main(){
-    double a,c=0;
+double pic(){
     for (int i=0; i < 999990; i++){
-
-        a=pow((-1),i)/(2*i+1);
-        c=a+c;
+    temp=pow((-1),i)/(2*i+1);
+    p=temp+p;
     }
-
-    cout<<"pi es igual a "<<setprecision(6)<<fixed<<c*4<<endl;
-
+    return p*4;
+    }
+main(){
+    cout<<"pi es igual a "<<setprecision(6)<<fixed<<pic()<<endl;
     return 0;
 }
