@@ -6,7 +6,7 @@ using namespace std;
 double pic(){
     for (int i=0; i < 999990; i++){
     temp=pow((-1),i)/(2*i+1);
-    p=temp+p;
+    p+=temp;
     }
     return p*4;
     }
